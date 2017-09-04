@@ -1,7 +1,38 @@
-.DS_Store
+# Processing
 applet
 application.linux32
 application.linux64
 application.windows32
 application.windows64
 application.macosx
+
+# Unity
+[Bb]uild
+[Ll]ibrary/
+[Oo]bj/
+[Tt]emp/
+*.pidb.meta
+#.meta
+sysinfo.txt
+
+# IDE
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+
+# OS
+.DS_Store*
+.Trashes
+._*
+*.swp
+*.Trashes
+.Spotlight-V100
+Icon?
+ehthumbs.db
+[Tt]humbs.db
