@@ -1,0 +1,43 @@
+// ANI2012A17_DrawText.pde
+// Exemple d'affichage de texture avec une police de caractères.
+// La police de caractères doit d'abord être encodée avant d'être chargée par un programme.
+// (éditeur de Processing > menu Tools > Create Font...)
+
+// variables primitives
+float positionX;
+float positionY;
+
+// classe de Processing pour la gestion des polices de caractères
+PFont typo;
+
+// fonction d'initialisation
+void setup()
+{
+  size(512, 512);
+
+  // importer la police de caractères à partir du répertoire /data
+  typo = loadFont("HelveticaNeue-Medium-64.vlw");
+
+  // calculer la position du centre de la fenêtre d'affichage
+  positionX = width/2;
+  positionY = height/2;
+}
+
+// fonction de mise à jour de l'affichage
+void draw()
+{
+  // couleur d'arrière-plan
+  background(31);
+
+  // couleur du texte
+  fill(127);
+
+  // alignement du texte
+  textAlign(CENTER, CENTER);
+
+  // taille du texte
+  textSize(64);
+
+  // afficher le nom de la police de caractères
+  text("Helvetica Neue", positionX, positionY);
+}
