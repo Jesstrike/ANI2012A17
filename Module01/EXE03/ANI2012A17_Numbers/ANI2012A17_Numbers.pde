@@ -2,9 +2,9 @@
 // Exemples de déclarations et d'opérations sur des variables numériques.
 
 // 1. déclaration et initialisation de variables numériques entières (int)
-int   a = 1;
-int   b = 2;
-int   c = 3;
+int a = 1;
+int b = 2;
+int c = 3;
 
 println("a = " + a);
 println("b = " + b);
